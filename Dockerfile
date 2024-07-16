@@ -3,6 +3,7 @@ FROM ubuntu:noble
 # Basic packages needed to download dependencies and unpack them.
 RUN apt-get update && apt-get install -y \
   bzip2 \
+  git \
   perl \
   tar \
   wget \
@@ -37,6 +38,7 @@ RUN apt-get update && apt-get install -y \
   libxcb-xfixes0-dev \
   libxvidcore-dev \
   lsb-release \
+  meson \
   pkg-config \
   sudo \
   tar \
